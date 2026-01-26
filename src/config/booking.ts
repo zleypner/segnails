@@ -18,7 +18,7 @@ export const SOCIAL_CONFIG = {
 } as const;
 
 export const SITE_CONFIG = {
-  name: "Segnini Nails",
+  name: "Segnini Nails Studio",
   tagline: "NAIL ART PREMIUM",
   description: "Diseños personalizados que reflejan tu esencia, con técnicas premium y dedicación absoluta en cada cita.",
 } as const;

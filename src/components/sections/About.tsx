@@ -1,25 +1,19 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sparkles, Heart, Clock, Award } from "lucide-react";
+import { Sparkles, Heart, Award } from "lucide-react";
 
 const stats = [
   {
     icon: Sparkles,
-    value: "5+",
+    value: "7+",
     label: "años",
     sublabel: "como artista de uñas",
   },
   {
     icon: Heart,
-    value: "+500",
+    value: "+10000",
     label: "clientas",
     sublabel: "satisfechas",
-  },
-  {
-    icon: Clock,
-    value: "2",
-    label: "horas",
-    sublabel: "de dedicación por cita",
   },
   {
     icon: Award,
@@ -53,7 +47,7 @@ export function About() {
 
                 {/* Years badge - smaller on mobile */}
                 <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 bg-white/95 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-lg">
-                  <p className="text-xl sm:text-2xl font-bold text-foreground">5+</p>
+                  <p className="text-xl sm:text-2xl font-bold text-foreground">7+</p>
                   <p className="text-xs sm:text-sm text-muted-foreground">
                     años creando sonrisas
                   </p>
@@ -100,8 +94,8 @@ export function About() {
               </p>
             </div>
 
-            {/* Stats Grid - 2 columns on all mobile, 4 on larger screens */}
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 pt-4 sm:pt-6">
+            {/* Stats Grid - 2 columns on all mobile, 3 on larger screens */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 pt-4 sm:pt-6">
               {stats.map((stat) => (
                 <Card
                   key={stat.label || stat.value}

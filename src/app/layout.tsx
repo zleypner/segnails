@@ -20,7 +20,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Segnini Nails | Nail Art Premium en Costa Rica",
+  title: "Segnini Nails Studio | Nail Art Premium en Costa Rica",
   description:
     "Diseños personalizados que reflejan tu esencia, con técnicas premium y dedicación absoluta en cada cita. Reserva tu cita de nail art en Costa Rica.",
   keywords: [
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     "Costa Rica",
     "diseño de uñas",
     "nail artist",
-    "Segnini Nails",
+    "Segnini Nails Studio",
   ],
   openGraph: {
-    title: "Segnini Nails | Nail Art Premium",
+    title: "Segnini Nails Studio | Nail Art Premium",
     description:
       "Uñas que hablan por ti, antes de que digas una palabra. Diseños personalizados con técnicas premium.",
     type: "website",
