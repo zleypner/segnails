@@ -60,11 +60,11 @@ export function Services() {
         </div>
 
         {/* Services Grid - Single column on mobile, 2 on tablet, 4 on desktop */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 items-stretch">
           {services.map((service) => (
             <Card
               key={service.title}
-              className={`relative ${
+              className={`relative h-full ${
                 service.popular
                   ? "border-rose shadow-lg ring-2 ring-rose/20"
                   : "border-border"
@@ -76,7 +76,7 @@ export function Services() {
                   Más popular
                 </Badge>
               )}
-              <CardContent className="p-4 sm:p-5 md:p-6 pt-6 sm:pt-7 md:pt-8">
+              <CardContent className="p-4 sm:p-5 md:p-6 pt-6 sm:pt-7 md:pt-8 flex-1 flex flex-col">
                 <div className="p-2 sm:p-3 rounded-lg sm:rounded-xl bg-rose-light/20 w-fit mb-3 sm:mb-4">
                   <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-rose" />
                 </div>
@@ -104,7 +104,7 @@ export function Services() {
                 <Button
                   asChild
                   variant={service.popular ? "default" : "outline"}
-                  className={`w-full rounded-full h-10 sm:h-11 text-sm ${
+                  className={`w-full rounded-full h-10 sm:h-11 text-sm mt-auto ${
                     service.popular
                       ? "bg-rose hover:bg-rose-dark text-white"
                       : "border-foreground/20 hover:bg-secondary"
