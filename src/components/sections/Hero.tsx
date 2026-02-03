@@ -64,18 +64,8 @@ export function Hero() {
 
             {/* Stats */}
             <div className="flex items-center gap-4 sm:gap-6 pt-2 sm:pt-4">
-              <div className="flex -space-x-2">
-                {["A", "B", "C", "D"].map((letter) => (
-                  <div
-                    key={letter}
-                    className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-rose-light/30 border-2 border-white flex items-center justify-center text-xs font-medium text-rose-dark"
-                  >
-                    {letter}
-                  </div>
-                ))}
-              </div>
               <p className="text-xs sm:text-sm text-muted-foreground">
-                <span className="font-semibold text-foreground">+200</span>{" "}
+                <span className="font-semibold text-foreground">+10000</span>{" "}
                 clientas felices
               </p>
             </div>

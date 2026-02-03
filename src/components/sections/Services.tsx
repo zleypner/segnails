@@ -30,7 +30,7 @@ const services = [
     icon: Crown,
     title: "Experiencia VIP",
     description: "El paquete completo para ocasiones especiales o cuando quieres consentirte.",
-    features: ["Spa de manos", "Nail art premium", "Tratamiento intensivo", "Champagne incluido"],
+    features: ["Spa de manos", "Nail art premium", "Tratamiento intensivo", "Bebida de cortesía"],
     popular: false,
   },
 ];
