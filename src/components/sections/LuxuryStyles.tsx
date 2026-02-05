@@ -1,49 +1,43 @@
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 import {
   Sparkles,
   Gem,
-  Palette,
-  Crown,
   Heart,
   Star,
+  Shield,
 } from "lucide-react";
 
 const luxuryServices = [
   {
-    icon: Sparkles,
-    title: "Natural Gel Enhancements",
-    description:
-      "Aplicación de gel sobre la uña natural para aportar mayor resistencia, durabilidad y un acabado elegante y brillante, manteniendo un aspecto natural.",
-  },
-  {
     icon: Gem,
-    title: "Gel-X Extensions",
+    title: "Gel X",
     description:
-      "Extensiones Gel-X premium, ligeras y flexibles, con excelente duración y opción de personalizar largo y forma.",
+      "Extensiones de uñas con tips de gel que se adhieren a la uña natural. Son livianas, resistentes y dan un acabado natural y duradero.",
   },
   {
-    icon: Palette,
-    title: "Signature Manicure",
+    icon: Sparkles,
+    title: "Semipermanente en manos",
     description:
-      "Manicure personalizado con diseños exclusivos adaptados a tu estilo, detalles refinados y un acabado de lujo.",
-  },
-  {
-    icon: Crown,
-    title: "Luxury Nail Art",
-    description:
-      "Nail art de alto nivel que incluye French modernos, diseños minimalistas, efectos chrome, glazed y detalles artísticos.",
-  },
-  {
-    icon: Heart,
-    title: "Classic & Elegant",
-    description:
-      "Estilos atemporales como tonos nude, rosados suaves, milky nails y French clásico, para un look limpio y sofisticado.",
+      "Esmaltado en gel que se seca en lámpara y dura hasta 2–3 semanas sin levantarse ni perder brillo.",
   },
   {
     icon: Star,
-    title: "Luxury Pedicure",
+    title: "Semipermanente en pies",
     description:
-      "Pedicure con esmaltado semipermanente, de larga duración y acabado pulido para unos pies impecables.",
+      "Esmaltado en gel para pies, ideal para mantener las uñas prolijas, brillantes y sin retoques por varias semanas.",
+  },
+  {
+    icon: Shield,
+    title: "Luminary",
+    description:
+      "Sistema de gel fortalecedor que ayuda a nivelar, proteger y estimular el crecimiento de la uña natural. Perfecto para uñas frágiles.",
+  },
+  {
+    icon: Heart,
+    title: "Pedicura completa",
+    description:
+      "Incluye limpieza, corte y limado de uñas, cuidado de cutículas, exfoliación y esmaltado para pies suaves y bien arreglados.",
   },
 ];
 
@@ -57,6 +51,19 @@ export function LuxuryStyles() {
             Porque tus manos dicen más de lo que imaginás
           </p>
           <div className="w-12 sm:w-16 h-0.5 bg-rose mx-auto mt-3 sm:mt-4" />
+        </div>
+
+        {/* Featured Image */}
+        <div className="mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto">
+          <div className="relative aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden bg-cream-dark shadow-lg">
+            <Image
+              src="/images/luxury-nails.jpg"
+              alt="Nail art premium"
+              fill
+              className="object-cover"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 768px"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8">

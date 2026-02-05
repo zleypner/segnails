@@ -1,36 +1,43 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Sparkles, Gem, Flower, Crown, Heart, Star } from "lucide-react";
+import { Sparkles, Gem, Heart, Star, Shield } from "lucide-react";
 import { BOOKING_CONFIG } from "@/config/booking";
 
 const services = [
   {
-    icon: Sparkles,
-    title: "Manicure Premium",
-    description: "Cuidado completo con esmaltado de larga duración y acabado impecable.",
-    features: ["Limado y forma", "Cutículas", "Esmaltado gel", "Hidratación"],
-    popular: false,
-  },
-  {
     icon: Gem,
-    title: "Nail Art Personalizado",
-    description: "Diseños únicos creados especialmente para ti, desde minimal hasta elaborate.",
-    features: ["Diseño exclusivo", "Piedras y detalles", "Foil y chrome", "Larga duración"],
+    title: "Gel X",
+    description: "Extensiones de uñas con tips de gel que se adhieren a la uña natural. Son livianas, resistentes y dan un acabado natural y duradero.",
+    features: ["Tips de gel", "Livianas y resistentes", "Acabado natural", "Duradero"],
     popular: true,
   },
   {
-    icon: Flower,
-    title: "Uñas Acrílicas",
-    description: "Extensiones perfectas con forma y largo a tu medida.",
-    features: ["Aplicación experta", "Forma personalizada", "Diseño incluido", "Retoque disponible"],
+    icon: Sparkles,
+    title: "Semipermanente en manos",
+    description: "Esmaltado en gel que se seca en lámpara y dura hasta 2–3 semanas sin levantarse ni perder brillo.",
+    features: ["Secado en lámpara", "Duración 2-3 semanas", "Sin levantarse", "Mantiene el brillo"],
     popular: false,
   },
   {
-    icon: Crown,
-    title: "Experiencia VIP",
-    description: "El paquete completo para ocasiones especiales o cuando quieres consentirte.",
-    features: ["Spa de manos", "Nail art premium", "Tratamiento intensivo", "Bebida de cortesía"],
+    icon: Star,
+    title: "Semipermanente en pies",
+    description: "Esmaltado en gel para pies, ideal para mantener las uñas prolijas, brillantes y sin retoques por varias semanas.",
+    features: ["Esmaltado gel", "Prolijas y brillantes", "Sin retoques", "Varias semanas"],
+    popular: false,
+  },
+  {
+    icon: Shield,
+    title: "Luminary",
+    description: "Sistema de gel fortalecedor que ayuda a nivelar, proteger y estimular el crecimiento de la uña natural. Perfecto para uñas frágiles.",
+    features: ["Gel fortalecedor", "Nivela y protege", "Estimula crecimiento", "Para uñas frágiles"],
+    popular: false,
+  },
+  {
+    icon: Heart,
+    title: "Pedicura completa",
+    description: "Incluye limpieza, corte y limado de uñas, cuidado de cutículas, exfoliación y esmaltado para pies suaves y bien arreglados.",
+    features: ["Limpieza y corte", "Cuidado de cutículas", "Exfoliación", "Esmaltado incluido"],
     popular: false,
   },
 ];
