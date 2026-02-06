@@ -32,6 +32,10 @@ export const metadata: Metadata = {
     "nail artist",
     "Segnini Nails Studio",
   ],
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
     title: "Segnini Nails Studio | Nail Art Premium",
     description:
